@@ -607,7 +607,7 @@ struct JSONLexerRange(Input, LexOptions options = LexOptions.init, String = stri
                 return;
             }
 
-            bool negexp = void;
+            bool negexp;
             if (_input.front == '-')
             {
                 negexp = true;
